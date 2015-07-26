@@ -11,6 +11,6 @@ Hoja de Trabajo 2
 
 public class main{
 	public static void main(String[] args) {
-		Stack<int> nstack = new Stack<>();
+		Stack<Integer> nstack = new Stack<Integer>();
 	}
 }

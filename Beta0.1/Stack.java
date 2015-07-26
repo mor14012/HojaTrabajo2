@@ -9,11 +9,9 @@ Julio González. Carné: 14096
 Hoja de Trabajo 2
 */
 
-public class Stack<E> implements ADTStack{
+public class Stack<E> implements ADTStack<E>{
 	private E value;
-	public Stack(E value){
-		this.value=value;
-	}
+
 	public void empty(){
 		System.out.println("empty");
 	}
@@ -26,6 +24,7 @@ public class Stack<E> implements ADTStack{
 	}
 	public E pop() throws Exception{
 		System.out.println("pop");
+		return value;
 	}
 	public int size(){
 		System.out.println("size");
@@ -33,5 +32,6 @@ public class Stack<E> implements ADTStack{
 	}
 	public E peek() throws Exception{
 		System.out.println("peek");
+		return value;
 	}
 }
