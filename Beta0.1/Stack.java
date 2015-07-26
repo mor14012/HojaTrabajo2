@@ -10,7 +10,13 @@ Hoja de Trabajo 2
 */
 
 public class Stack<E> implements ADTStack<E>{
-	private E value;
+	private E[] value;
+	private int size, top;
+
+	public Stack(int size){
+		top =-1;
+		value = (E[]) new Object[size];
+	}
 
 	public void empty(){
 		System.out.println("empty");
@@ -20,11 +26,12 @@ public class Stack<E> implements ADTStack<E>{
 		return true;
 	}
 	public void push(E x){
-		System.out.println("push");
+		value[++top] = x;
+		System.out.println("Element: '"+value[top]+"' pushed");
 	}
 	public E pop() throws Exception{
 		System.out.println("pop");
-		return value;
+		return value[top--];
 	}
 	public int size(){
 		System.out.println("size");
@@ -32,6 +39,6 @@ public class Stack<E> implements ADTStack<E>{
 	}
 	public E peek() throws Exception{
 		System.out.println("peek");
-		return value;
+		return value[0];
 	}
 }
