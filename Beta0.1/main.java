@@ -11,17 +11,20 @@ Hoja de Trabajo 2
 
 public class main{
 	public static void main(String[] args) {
-		Calculadora<Double> nCalculadora = new Calculadora<Double>();
-		try {
-			nCalculadora.readFile("datos.txt");
-		} 	catch(FileNotFoundException e){
-			System.out.println("Error: Fichero no encontrado");
-			System.out.println(e.getMessage());
-		}
-		catch(Exception e){
-			System.out.println("Error de lectura del fichero");
-			System.out.println(e.getMessage());
-		}
-		
+		Stack<Integer> nstack = new Stack<Integer>(10);
+		 nstack.push(125);
+		 try{
+		 	System.out.println("I popped the element: "+nstack.pop());	
+		 }
+		 catch(Exception e){
+		 	System.out.println("Ups...");
+		 }
+		 System.out.println("Lets try to pop again");
+		 try{
+		 	System.out.println("I popped the element: "+nstack.pop());	
+		 }
+		 catch(Exception e){
+		 	System.out.println("What did you expect bro??? You're poping no shit (Stack is empty)");
+		 }
 	}
 }

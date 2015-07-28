@@ -26,8 +26,6 @@ public class Stack<E> implements ADTStack<E>{
 		return true;
 	}
 	public void push(E x){
-		if(top == (size-1))
-				throw new FullStackException(String.format("This shit is full Bro %s",x));
 		value[++top] = x;
 		System.out.println("Element: '"+value[top]+"' pushed");
 	}

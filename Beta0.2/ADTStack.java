@@ -9,11 +9,12 @@ Julio González. Carné: 14096
 Hoja de Trabajo 2
 */
 
-import java.io.FileNotFoundException;
-
-public interface ADTCalculadora<P> {
-	public void readFile(String file) throws FileNotFoundException;
-	public P calcular();
-	
+public interface ADTStack<E> {
+	public void empty();
+	public boolean isEmpty();
+	public void push(E x) ;
+	public E pop() throws Exception;
+	public int size();
+	public E peek() throws Exception;
 	
 }

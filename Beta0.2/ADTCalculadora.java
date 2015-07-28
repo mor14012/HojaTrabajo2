@@ -12,8 +12,6 @@ Hoja de Trabajo 2
 import java.io.FileNotFoundException;
 
 public interface ADTCalculadora<P> {
-	public void readFile(String file) throws FileNotFoundException;
-	public P calcular();
-	
-	
+	public void readFile(String file) throws FileNotFoundException, Exception;
+	public P calcular() throws Exception;
 }
