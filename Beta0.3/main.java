@@ -9,8 +9,15 @@ Julio González. Carné: 14096
 Hoja de Trabajo 2
 */
 import java.io.FileNotFoundException;
-
+/**
+ * Clase main que permite la interaccion usuario-programa
+ * @author Julio Gonzalez, Diego Morales, Diego Sosa
+ */
 public class main{
+     /**
+	 * Clase main que permite la interaccion usuario-programa
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		Calculadora<Double> nCalculadora = new Calculadora<Double>();
 		try {
