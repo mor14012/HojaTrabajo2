@@ -180,8 +180,13 @@ public class Calculadora<P> implements ADTCalculadora<P>{
 					e.printStackTrace();
 				}
 		    	
-				c = b/a;
-		    	nstack.push(c);
+				if (a!=0){
+						c = b/a;
+		    	                       nstack.push(c);
+					} else{
+						throw new Exception("Error: No se puede dividir entre 0");
+					
+					}
 		    	
 		    	//System.out.println("Encontramos una división en "+i);	
 		    } else {
